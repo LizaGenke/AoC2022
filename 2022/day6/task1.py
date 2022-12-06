@@ -8,7 +8,7 @@ with open(input) as f:
         for char in datastream:
             last_added_index += 1
             package.append(char)
-            if len(package) > 14:
+            if len(package) > 4:
                 package.pop(0)
                 if (len(set(package)) == len(package)):
                     print(last_added_index)
